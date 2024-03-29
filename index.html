@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Manager</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <div class="container">
@@ -12,6 +13,11 @@
         <form id="task-form">
             <input type="text" id="task-name" placeholder="Task Name" required>
             <input type="text" id="task-description" placeholder="Task Description" required>
+            <select id="task-status" required>
+                <option value="Not started">Not started</option>
+                <option value="In process">In process</option>
+                <option value="Done">Done</option>
+            </select>
             <button type="submit">Add Task</button>
         </form>
         <ul id="task-list">
