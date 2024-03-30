@@ -22,7 +22,7 @@ To run the application locally, follow these steps:
      ```
      node index.js
      ```
-   - The application will start, and you can access it at http://localhost:3000 in your web browser.
+   - The application will start, and you can access it at http://localhost:8080 in your web browser.
 
 ## Docker Setup:
 To build and run the application using Docker, follow these steps:
@@ -41,11 +41,11 @@ To build and run the application using Docker, follow these steps:
 3. **Running a Docker Container:**
    - Once the Docker image is built, run the following command to start a Docker container:
      ```
-     docker run -d -p 3000:3000 --name my-web-app-container my-project-web-app
+     docker run -d -p 8080:80 --name my-web-app-container my-project-web-app
      ```
 
 4. **Accessing the Application:**
-   - The application will be accessible at http://localhost:3000 in your web browser.
+   - The application will be accessible at http://localhost:8080 in your web browser.
 
 ## Assumptions and Decisions:
 During the development process, we made the following assumptions and decisions:
